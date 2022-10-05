@@ -1,38 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Inter:wght@500&family=Merriweather:wght@700&display=swap");
+/* font-family: "Cinzel Decorative", cursive;
+font-family: "Inter", sans-serif;
+font-family: "Merriweather", serif; */
+body{
+    background: hsla(16, 100%, 76%, 1);
+    background: linear-gradient(90deg, hsla(16, 100%, 76%, 1) 0%, hsla(49, 100%, 81%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(16, 100%, 76%, 1) 0%, hsla(49, 100%, 81%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(16, 100%, 76%, 1) 0%, hsla(49, 100%, 81%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FFA585", endColorstr="#FFEDA0", GradientType=1)
+}
 .App {
-  text-align: center;
+    margin: auto;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading{
+    display: block;
+    background-color: white;
+    font-family: "Cinzel Decorative", cursive;
+    color: #243748;
+    font-size: 50px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px 0px;
+    padding: 10px;
+    justify-items: center;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    padding: 0px 25px;
+    color: white;
+    background: hsla(208, 33%, 21%, 1);
+    background: linear-gradient(360deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+    background: -moz-linear-gradient(360deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+    background: -webkit-linear-gradient(360deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#243748", endColorstr="#4B749F", GradientType=1);
+    border-radius: 20px;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.card h2 {
+    font-family: "Merriweather", serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card p {
+    font-family: "Inter", sans-serif;
+}
+
+.search-box{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    outline: none;
+    border: 0px solid;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
 }
