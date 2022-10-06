@@ -1,6 +1,19 @@
-import React, { Component } from 'react'
+import React from "react";
 
-export default class SearchBox extends Component {
+const SearchBox = ({ className, placeholder, onChange }) => {
+  return (
+    <input
+      className={className}
+      type="search"
+      placeholder={placeholder}
+      onChange={onChange}
+    />
+  )
+}
+
+export default SearchBox;
+
+/* export default class SearchBox extends Component {
   render() {
 
     return (
@@ -14,3 +27,4 @@ export default class SearchBox extends Component {
     )
   }
 }
+ */
