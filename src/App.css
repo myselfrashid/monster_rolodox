@@ -12,6 +12,7 @@ body{
 .App {
     margin: auto;
     text-align: center;
+    padding: 20px;
 }
 
 .heading{
@@ -25,10 +26,9 @@ body{
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px 0px;
+    grid-gap: 50px 10px;
     padding: 10px;
     justify-items: center;
-    
 }
 
 .card {
@@ -48,6 +48,11 @@ body{
     text-align: center;
 }
 
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+}
+
 .card h2 {
     font-family: "Merriweather", serif;
 }
@@ -57,6 +62,7 @@ body{
 }
 
 .search-box{
+    margin-bottom: 50px;
     font-size: 20px;
     text-align: center;
     padding: 10px;
